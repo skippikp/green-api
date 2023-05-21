@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  flex: 0 0 30%;
+  max-width: 30%;
+  background-color: #fff;
+  .contacts__header {
+    background-color: $light-gray;
+    padding: 10px 16px;
+    display: flex;
+    .contacts__header__avatar {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      & svg {
+        width: 100%;
+        fill: rgb(203, 203, 203);
+      }
+    }
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #fff;
+  height: 49px;
+  box-shadow: 0 2px 3px rgba(11, 20, 26, 0.08);
+  font-size: 14.5px;
+  line-height: 19px;
+  .input-container__search-input {
+    width: 100%;
+    position: relative;
+    input {
+      height: 35px;
+      padding-left: 14px;
+      padding-right: 65px;
+      background-color: $light-gray;
+      border-radius: 8px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .message-icon {
+      position: absolute;
+      right: 14px;
+      top: 7px;
+      cursor: pointer;
+    }
+    .input_error {
+      border: 1px solid rgb(255, 98, 98);
+      color: rgb(255, 98, 98);
+    }
+  }
+}

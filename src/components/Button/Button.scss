@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.btn {
+  border: 0px;
+  background-color: $mid-green;
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: $light-green;
+  &:hover {
+    background-color: $dark-green;
+    cursor: pointer;
+    color: $light-green;
+  }
+}
